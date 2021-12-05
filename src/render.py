@@ -104,6 +104,9 @@ def renderTiles():
 		for y in x:#y is tile
 			renderTile(y)
 
+def renderCordTile(t):
+	renderTile(world.grid[t[0]][t[1]])
+
 def renderTile(t):
 	cord=(t.x, t.y)
 	cord=np.multiply(tileTotal,cord)

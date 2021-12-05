@@ -1,7 +1,7 @@
 import random
 
 #default size
-worldX=96
+worldX=196
 worldY=64
 
 wallcoef=0.2

@@ -1,5 +1,6 @@
 import pygame
 import render as r
+import pathfinder as p
 running=True
 
 def event(event):
@@ -12,11 +13,15 @@ def event(event):
 			r.world.worldGen()
 			r.world.randpoints()
 			r.renderTick()
-		#elif event.key == pygame.K_RIGHT:
-		#	print("Right key pressed")
+		elif event.key == pygame.K_RETURN:
+			r.renderTick()
+			p.findpath()
+			r.renderTick()
+			r.world.worldGen()
+			r.world.randpoints()
 		
-	if event.type == pygame.KEYUP:
-		pass
+	#if event.type == pygame.KEYUP:
+	#	pass
 		
 		#if event.key == pygame.K_LEFT:
 		#	print("Left key released")

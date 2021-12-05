@@ -14,6 +14,9 @@ r.renderInit()
 r.renderFirst()
 
 
+import pathfinder as p
+p.world=world
+
 import events as ev
 while ev.running:
 	for event in pygame.event.get():
