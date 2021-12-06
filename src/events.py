@@ -16,7 +16,7 @@ def event(event):
 		elif event.key == pygame.K_RETURN:
 			r.renderTick()
 			p.findpath()
-			r.renderTick()
+			#r.renderTick()
 			r.world.worldGen()
 			r.world.randpoints()
 		

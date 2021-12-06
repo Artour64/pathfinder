@@ -118,6 +118,13 @@ def renderTile(t):
 	else:
 		screen.blit(roadImg, cord)
 	#print(c)
+	
+def pathBackTileRender(t):
+	#cord=(t.x, t.y)
+	cord=(t[0],t[1])
+	cord=np.multiply(tileTotal,cord)
+	cord=np.add(to,cord)
+	screen.blit(pathImg, cord)
 
 def renderpoints():
 	w=world

@@ -14,6 +14,7 @@ class Tile:
 		self.y=0
 		self.wall=False
 		self.visited=False
+		self.aDist=0
 		
 class World:
 	def __init__(self,x=worldX,y=worldY):
