@@ -12,4 +12,4 @@ A gps pathfinder
 ### Features:
  - random map generation (press space to regenerate)
  - select 2 random points
- - pathfinding between points (to do)
+ - pathfinding between points (press enter)
