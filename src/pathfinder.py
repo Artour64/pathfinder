@@ -3,7 +3,7 @@ import render as r
 import pygame
 
 #1000= 1 second
-delay=5
+delay=0
 
 world=0#placeholder, set in main.py
 done=False
@@ -78,9 +78,13 @@ def expandEdge(x):
 def closestEdge():
 	#global edge
 	closest=0
-	d=dist(edge[closest],world.b)
+	#d=dist(edge[closest],world.b)
+	#d=getTile(edge[closest]).aDist
+	d=getTile(edge[closest]).aDist+dist(edge[closest],world.b)*1.0000001
 	for c in range(len(edge)):
-		d2=dist(edge[c],world.b)
+		#d2=dist(edge[c],world.b)
+		#d2=getTile(edge[c]).aDist
+		d2=getTile(edge[c]).aDist+dist(edge[c],world.b)*1.0000001
 		if d2 < d:
 			d=d2
 			closest=c
